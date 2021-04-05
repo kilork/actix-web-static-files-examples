@@ -1,6 +1,7 @@
 [workspace]
 
 members = [
+    "resource-dir",
     "generate-resources-mapping",
     "webpack",
 ]

@@ -1,7 +1,11 @@
 [workspace]
 
 members = [
-    "resource-dir",
     "generate-resources-mapping",
+    "npm-resource-dir",
+    "resource-dir",
     "webpack",
+]
+
+exclude = [
 ]

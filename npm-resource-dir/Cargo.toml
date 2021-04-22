@@ -1,0 +1,13 @@
+[package]
+name = "npm-resource-dir"
+version = "0.1.0"
+authors = ["Alexander Korolev <alexander.korolev.germany@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "3"
+actix-web-static-files = "3.1"
+static-files = "0.2.1"
+
+[build-dependencies]
+static-files = "0.2.1"

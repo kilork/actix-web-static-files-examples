@@ -1,3 +1,3 @@
-this file forces change detection
+this file forces change detection to work
 because by default package.json, package-lock.json and node_modules are ignored
-but we need at least one entry for change detection to start to work
+but we need at least one entry for change detection to start working

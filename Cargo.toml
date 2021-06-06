@@ -5,6 +5,7 @@ members = [
     "npm-resource-dir",
     "resource-dir",
     "webpack",
+    "yarn-webpack",
 ]
 
 exclude = [

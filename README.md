@@ -15,3 +15,4 @@ A collection of [actix-web-static-files](https://github.com/kilork/actix-web-sta
 1. [generate-resources-mapping](generate-resources-mapping) - uses `generate_resources_mapping` function
 to show possibility to have own resource generation function definition.
 1. [webpack](webpack) - minimal WebPack example with change detection.
+1. [yarn-webpack](yarn-webpack) - [webpack](webpack) example using `yarn` package manager.

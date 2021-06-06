@@ -1,7 +1,8 @@
 use std::collections::HashMap;
 
 use actix_web::{App, HttpServer};
-use actix_web_static_files::{deps::Resource, ResourceFiles};
+use actix_web_static_files::ResourceFiles;
+use static_files::Resource;
 
 fn generate() -> HashMap<&'static str, Resource> {
     include!(concat!(env!("OUT_DIR"), "/generated.rs"))

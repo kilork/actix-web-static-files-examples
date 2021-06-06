@@ -1,5 +1,5 @@
 use static_files::resource_dir;
 
-fn main() {
-    resource_dir("./static").build().unwrap();
+fn main() -> std::io::Result<()> {
+    resource_dir("./static").build()
 }

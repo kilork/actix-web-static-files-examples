@@ -1,3 +1,5 @@
-/target
-**/*.rs.bk
+**/target
+**/node_modules
+**/package-lock.json
+**/yarn.lock
 Cargo.lock

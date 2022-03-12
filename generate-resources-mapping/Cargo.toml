@@ -6,7 +6,7 @@ edition = "2018"
 
 [dependencies]
 actix-web = "3"
-actix-web-static-files = "3.0"
+actix-web-static-files = "3"
 static-files = "0.2.1"
 
 [build-dependencies]

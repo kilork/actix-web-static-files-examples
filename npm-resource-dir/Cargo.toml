@@ -1,8 +1,8 @@
 [package]
 name = "npm-resource-dir"
-version = "0.1.0"
-authors = ["Alexander Korolev <alexander.korolev.germany@gmail.com>"]
-edition = "2018"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
 
 [dependencies]
 actix-web = "4.0"

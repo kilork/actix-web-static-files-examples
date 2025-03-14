@@ -8,5 +8,15 @@ members = [
     "yarn-webpack",
 ]
 
-exclude = [
-]
+[workspace.package]
+version = "0.1.0"
+authors = ["Alexander Korolev <alexander.korolev.germany@gmail.com>"]
+edition = "2024"
+
+[workspace.dependencies]
+actix-web = "4.0"
+actix-web-static-files = "4.0"
+static-files = "0.2.1"
+
+[workspace.build-dependencies]
+static-files = "0.2.1"

@@ -1,13 +1,13 @@
 [package]
 name = "generate-resources-mapping"
-version = "0.1.0"
-authors = ["Alexander Korolev <alexander.korolev.germany@gmail.com>"]
-edition = "2018"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
 
 [dependencies]
-actix-web = "4.0"
-actix-web-static-files = "4.0"
-static-files = "0.2.1"
+actix-web.workspace = true
+actix-web-static-files.workspace = true
+static-files.workspace = true
 
 [build-dependencies]
-static-files = "0.2.1"
+static-files.workspace = true

@@ -13,6 +13,7 @@ resolver = "3"
 version = "0.1.0"
 authors = ["Alexander Korolev <alexander.korolev.germany@gmail.com>"]
 edition = "2024"
+rust-version = "1.85.1"
 
 [workspace.dependencies]
 actix-web = "4.0"

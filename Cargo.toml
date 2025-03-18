@@ -7,6 +7,7 @@ members = [
     "webpack",
     "yarn-webpack",
 ]
+resolver = "3"
 
 [workspace.package]
 version = "0.1.0"
@@ -16,7 +17,7 @@ edition = "2024"
 [workspace.dependencies]
 actix-web = "4.0"
 actix-web-static-files = "4.0"
-static-files = "0.2.1"
+static-files = "0.2.4"
 
 [workspace.build-dependencies]
-static-files = "0.2.1"
+static-files = "0.2.4"

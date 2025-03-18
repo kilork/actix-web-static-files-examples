@@ -3,6 +3,7 @@ name = "generate-resources-mapping"
 version.workspace = true
 authors.workspace = true
 edition.workspace = true
+rust-version.workspace = true
 
 [dependencies]
 actix-web.workspace = true

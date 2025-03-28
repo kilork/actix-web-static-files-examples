@@ -11,5 +11,9 @@ actix-web.workspace = true
 actix-web-static-files.workspace = true
 static-files.workspace = true
 
+[dev-dependencies]
+reqwest.workspace = true
+assert_cmd.workspace = true
+
 [build-dependencies]
 static-files.workspace = true

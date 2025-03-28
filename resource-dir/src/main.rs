@@ -6,7 +6,7 @@ include!(concat!(env!("OUT_DIR"), "/generated.rs"));
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     let listen = std::env::var("LISTEN").unwrap_or_else(|_| "127.0.0.1:8081".into());
-    let server = HttpServer::new(move || {
+    let server = HttpServer::new(|| {
         let generated = generate();
         App::new().service(ResourceFiles::new("/", generated))
     })

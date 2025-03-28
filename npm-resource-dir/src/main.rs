@@ -1,4 +1,4 @@
-use actix_web::{get, App, HttpResponse, HttpServer, Responder};
+use actix_web::{App, HttpResponse, HttpServer, Responder, get};
 use actix_web_static_files::ResourceFiles;
 
 include!(concat!(env!("OUT_DIR"), "/generated.rs"));
@@ -14,13 +14,20 @@ async fn index() -> impl Responder {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    HttpServer::new(move || {
+    let listen = std::env::var("LISTEN").unwrap_or_else(|_| "127.0.0.1:8083".into());
+    let server = HttpServer::new(|| {
         let generated = generate();
         App::new()
             .service(ResourceFiles::new("/static", generated))
             .service(index)
     })
-    .bind("127.0.0.1:8080")?
-    .run()
-    .await
+    .bind(listen)?;
+
+    if let Some(addr) = server.addrs().first() {
+        println!("{:05}", addr.port());
+    }
+
+    let handle = actix_web::rt::spawn(server.run());
+
+    handle.await?
 }

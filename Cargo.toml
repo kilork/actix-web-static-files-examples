@@ -19,7 +19,7 @@ publish = false
 [workspace.dependencies]
 actix-web = "4"
 actix-web-static-files = { version = "4.0", features = ["static-files-03"] }
-static-files = "0.3"
+static-files = "0.3.1"
 assert_cmd = "2.0"
 predicates = "3.1"
 reqwest = { version = "0.12", features = ["blocking"] }

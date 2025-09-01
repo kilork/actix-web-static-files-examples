@@ -23,7 +23,3 @@ static-files = "0.3.1"
 assert_cmd = "2.0"
 predicates = "3.1"
 reqwest = { version = "0.12", features = ["blocking"] }
-
-[patch.crates-io]
-static-files.path = "../../static-files-rs/static-files"
-actix-web-static-files.path = "../actix-web-static-files"

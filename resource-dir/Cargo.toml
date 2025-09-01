@@ -7,13 +7,13 @@ rust-version.workspace = true
 publish.workspace = true
 
 [dependencies]
-actix-web.workspace = true
-actix-web-static-files.workspace = true
-static-files.workspace = true
+actix-web = "4"
+actix-web-static-files = { version = "4.1", features = ["static-files-03"] }
+static-files = "0.3.1"
 
 [dev-dependencies]
 reqwest.workspace = true
 assert_cmd.workspace = true
 
 [build-dependencies]
-static-files.workspace = true
+static-files = "0.3.1"

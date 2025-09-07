@@ -16,8 +16,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: dtolnay/rust-toolchain@1.85.1
-    - name: Remove config.toml
-      run: rm .cargo/config.toml
     - name: Build
       run: cargo build
     - name: Run tests

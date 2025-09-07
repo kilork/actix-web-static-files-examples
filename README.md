@@ -8,13 +8,6 @@ Dual-licensed under `MIT` or the [UNLICENSE](http://unlicense.org/).
 
 A collection of [actix-web-static-files](https://github.com/kilork/actix-web-static-files) examples.
 
-## Build with local static-files version
-
-```
-cargo update --config 'patch.crates-io.static-files.path="../../static-files-rs/static-files"'
-cargo build --config 'patch.crates-io.static-files.path="../../static-files-rs/static-files"'
-```
-
 ## Examples
 
 1. [resource-dir](resource-dir) - basic example using `resource_dir` function.
